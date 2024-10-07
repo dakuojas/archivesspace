@@ -1,0 +1,122 @@
+@baseFontSize: 13px;
+
+body {
+  background: #e9e9e9 asset-url('themes/default/bg_body.png') repeat top left;
+}
+
+.content-pane {
+  background-color: #f9f9f9;
+  .border-radius(4px);
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.breadcrumb {
+  #gradient > .vertical(#e9e9e9, #f1f1f1);
+}
+
+.record-pane {
+  /* box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2) inset; */
+  box-shadow: -1px 0 2px rgba(0, 0, 0, 0.2);
+  background-color: white;
+
+  /* *margin-left: (@fluidGridGutterWidth - (.5 / @gridRowWidth * 100 * 1%)) / 2; */
+
+  /* *padding-left: 0 (@fluidGridGutterWidth - (.5 / @gridRowWidth * 100 * 1%)) / 2; */
+}
+
+.navbar {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+.footer {
+  padding: 20px;
+  text-align: right;
+}
+
+.footer a {
+  color: #333;
+  text-shadow: 1px 1px 2px white;
+}
+
+.badge {
+  background-color: #991010;
+}
+
+@media print {
+  a[href]::after {
+    display: none;
+  }
+  .pagination {
+    display: none;
+  }
+}
+
+a {
+  color:@abg-maroon;
+}
+
+a:hover {
+  color:@abg-orange;
+}
+
+.btn-primary {
+  background-color: @abg-maroon;
+  border-color: @abg-maroon;
+}
+
+.btn-primary:hover {
+  background-color: @abg-orange;
+  border-color: @abg-maroon;
+}
+
+.btn-primary:active {
+  background-color: @abg-maroon;
+  border-color: @abg-maroon;
+}
+.btn-info {
+  background-color: @abg-maroon;
+  border-color: @abg-maroon;
+}
+
+.btn-primary:hover {
+  background-color: @abg-orange;
+  border-color: @abg-maroon;
+}
+.pagination > li > a {
+  color: @abg-maroon;
+} 
+.pagination > .active > a {
+  background-color: @abg-maroon;
+  border-color: @abg-maroon;
+}
+.pagination > .active > a:hover {
+  background-color: @abg-orange;
+  border-color: @abg-orange;
+}
+.table.table-sortable thead th.sort-asc {
+  background-image: linear-gradient(to bottom, #f0f7fa 0%, @abg-yellow 100%);
+}
+
+.alert-info {
+  background-color: @abg-yellow;
+  // filter: brightness(250%);
+  border-color: @abg-maroon;
+  color: @abg-maroon;
+}
+
+.label-info {
+  background-color: @abg-orange;
+}
+
+.as-nav-list > li.active > a:hover, .as-nav-list > li.active > a:focus {
+  background-color: @abg-orange;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: @abg-maroon;
+  color: white;
+}
+ 
