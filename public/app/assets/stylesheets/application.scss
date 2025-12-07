@@ -16,9 +16,9 @@
 
 // Adding these first so they can override bootstrap variables.
 // See: https://stackoverflow.com/questions/11773583/can-i-override-sass-variables-after-they-have-been-imported
-@import 'archivesspace/fonts';
-@import 'archivesspace/colors';
-@import 'archivesspace/variables';
+@import 'flameu/fonts';
+@import 'flameu/colors';
+@import 'flameu/variables';
 
 @import 'bootstrap/scss/bootstrap.scss';
 @import 'archivesspace/bootstrap-overrides';
@@ -27,17 +27,26 @@
 
 /* stylelint-disable-next-line scss/at-import-no-partial-leading-underscore */
 @import 'foundation/_functions.scss';
-@import 'archivesspace/aspace';
-@import 'archivesspace/record-type-badge';
-@import 'archivesspace/result-linked-instances';
-@import 'archivesspace/result-representative-file-version';
+@import 'flameu/aspace';
+@import 'flameu/record-type-badge';
+@import 'flameu/result-linked-instances';
+@import 'flameu/result-representative-file-version';
 
-@import 'archivesspace/infinite-records';
-@import 'archivesspace/infinite-tree';
+@import 'flameu/infinite-records';
+@import 'flameu/infinite-tree';
 @import 'archivesspace/largetree';
-@import 'archivesspace/mixed-content';
-@import 'archivesspace/read-more-notes';
+@import 'flameu/mixed-content';
+@import 'flameu/read-more-notes';
 
-@import 'archivesspace/helpers.scss';
+@import 'flameu/helpers.scss';
 
-@import 'archivesspace/print';
+@import 'flameu/print';
+
+
+.largetree-container .current td, .largetree-container .current .table-cell {
+    background-color: $flameu-gray-3;
+}
+
+.largetree-container .current {
+  outline: 1px solid $flameu-blue-1;
+}
