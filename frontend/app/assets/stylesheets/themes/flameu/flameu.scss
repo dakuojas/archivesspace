@@ -1,12 +1,106 @@
-/* Navbar Styles */
-$navbarBackground: $flameu-blue-1;
-$navbarBackgroundHighlight: $flameu-orange-1;
 
-body {
-  background-color: #fdd;
+a {
+    color: $flameu-blue-1;
 }
 
-body > .container {
-  background-color: white;
-  padding: 0 10px;
+a:hover {
+    color: $flameu-orange-2;
+}
+
+.alert-info{
+    color:$flameu-blue-1;
+    background-color: $white;
+    border-color: $flameu-orange-2;
+}
+
+.as-nav-list > li > a.active{
+    background-color: $flameu-orange-2;
+}
+
+.badge {
+    background-color: $flameu-orange-2;
+    color: white;
+}
+
+.btn-info:hover {
+    color: white;
+    background-color: $flameu-orange-2;
+    border-color: $flameu-orange-2;
+}
+
+.btn-default.bulktypebtn.active {
+    color: #fff;
+    background-color: $flameu-orange-2;
+    border-color: $flameu-orange-2;
+}
+
+.btn-link {
+    color: $flameu-blue-1;
+}
+
+.btn-link:hover {
+    color: $flameu-orange-2;
+}
+
+.btn-primary {
+    background-color: $flameu-blue-1;
+    border-color: $flameu-blue-1;
+}
+
+.btn-primary:hover {
+    background-color: $flameu-orange-2;
+    border-color: $flameu-orange-2;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: $flameu-orange-2; 
+    border-color: $flameu-orange-2;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: $flameu-orange-2;
+    border-color:  $flameu-orange-2;
+}
+
+.largetree-container .current td, 
+.largetree-container .current .table-cell {
+    background-color: $white;
+}
+
+li.token-input-token {
+
+    background-image: linear-gradient(to bottom, $flameu-orange-2 0%, $flameu-blue-1 100%);
+    border:  1px solid $flameu-orange-2;
+    color: #fff;
+}
+
+.page-link {
+    color: $flameu-blue-1;
+}
+
+.page-link:hover {
+    color: $flameu-orange-2;
+}
+
+.page-item.active .page-link {
+    background-color: $flameu-orange-2;
+    border-color: $flameu-orange-2;
+}
+
+table.table-sortable thead th.sort-asc {
+    background-image: linear-gradient(to bottom, $white);
+}
+
+.token {
+    border: 1px solid $flameu-orange-2;
+    background-color: $flameu-orange-2;
+    background-image: linear-gradient(to bottom, $flameu-orange-2 0%, $flameu-blue-1 100%);
+}
+
+.token:hover {
+    border: 1px solid $flameu-orange-2;
+    background-color: $flameu-orange-2;
+    background-image: linear-gradient(to bottom, $flameu-blue-1 0%, $flameu-orange-2 100%);
 }

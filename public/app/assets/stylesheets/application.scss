@@ -50,3 +50,12 @@
 .largetree-container .current {
   outline: 1px solid $flameu-blue-1;
 }
+
+
+.node-title {
+  color: $flameu-blue-1;
+}
+
+.node-title:hover {
+  color: $flameu-orange-2;
+}
